@@ -1,0 +1,129 @@
+:root {
+    --cl-Soft-orange: hsl(35, 77%, 62%);
+    --cl-Soft-red: hsl(5, 85%, 63%);
+    --cl-Off-white: hsl(36, 100%, 99%);
+    --cl-Grayish-blue: hsl(187, 55%, 45%);
+    --cl-Dark-grayish-blue: hsl(236, 13%, 42%);
+    --cl-Very-dark-blue: hsl(240, 95%, 8%);
+
+    --font-family: Inter, system-ui, sans-serif;
+}
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+html {
+    font-size: 100%;
+}
+body {
+    background-color: var(--cl-Off-white);
+    
+
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .image-container {
+        
+        position: relative;
+        display: inline-block;
+        max-width: 100%;
+
+        .image-text {
+            position: absolute;
+            top: 10px;
+            left: 10%;
+            font-family: var(--font-family);
+            color: white ;
+            font-size: 22px;
+        }
+
+        & img{
+            position: relative;
+            max-width: 100%;
+            object-fit: contain;
+            background-color: black;
+        }
+    }
+
+    .principal-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        max-width: 960px;
+        margin: 0 auto;
+
+        .bodas-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            max-width: 960px;
+            margin: 0 auto;
+
+            .boda {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem;
+                max-width: 960px;
+                margin: 0 auto;
+            }
+        }
+
+        .embarazo-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            max-width: 960px;
+            margin: 0 auto;
+
+            .emb {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem;
+                max-width: 960px;
+                margin: 0 auto;
+            }
+        }
+
+        .bebes-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            max-width: 960px;
+            margin: 0 auto;
+
+            .bebe {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem;
+                max-width: 960px;
+                margin: 0 auto;
+            }
+        }
+
+        & img {
+            max-width: 100%;
+            object-fit: contain;
+            background-color: black;
+        }
+    }
+} 

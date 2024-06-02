@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Fotografia</title>
+    
+    <link rel="stylesheet" href="assets/css/css-global.css">
+    <link rel="stylesheet" href="assets/css/index-css.css">
+</head>
+<body>
+
+    <header class="header">
+        <img class="logo" src="assets/images/logotipo gloria-negro.png" alt="logo">
+        
+        <button class="menu-toggle" id="abrir">
+            <img src="assets/images/icon-menu.svg" alt="menu">
+        </button>
+
+        <nav class="nav" id="nav">  
+
+            <button class="cerrar-menu" id="cerrar">
+                <img src="assets/images/icons8-x-48.png" alt="x">
+            </button>
+            <ul class="nav-list" >
+
+                <li><a href="#Inicio">INICIO</a></li>
+                <li><a href="#About">SOBRE NOSOTROS</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="#Blog">BLOG</a></li>
+                <li><a href="#Testimonios">TESTIMONIOS</a></li>
+                    
+            </ul>
+               
+            
+            
+        </nav>
+        
+    </header>
+
+    <main class="main-container">
+
+        <div class="image" id="Inicio">
+            <img src="assets/images/ini.jpg" alt="foto-ini">
+        </div>
+
+        <div class="sobre-nosotros" id="About">
+
+            <div class="title">
+                <h1><u>Sobre nosotros</u></h1>
+            </div>
+
+           <div class="image-autor"> 
+                <div class="autor">
+                    <p>Sobre Gloria y Fran</p>
+                </div>
+            </div>
+
+            <div class="text">
+
+                <h3>CONOCENOS</h3><hr>
+
+                <p><strong>"La forografía ayuda a las personas a ver"</strong></p>
+
+                <p>¡Hola! Somos Gloria y Fran. Dos fotógrafos ubicados en Zafra. Nos apasiona crear y capturar aquellos momentos más importantes y bonitos. ¿Te gustaría guardar tus recuerdos y volver a vivirlos?</p>
+
+            </div>
+
+        </div>
+
+        <div class="portfolio">
+
+            <div class="title">
+                <h1>Portfolio</h1><hr>
+            </div>
+            
+            <div class="portfolio-container">
+                <div class="text">
+                     <p>Nuestro servicio de fotografía abarca numerosos eventos y tipos, como la fotografía de bodas, fotografía durante el embarazo, fotografía newborn, smascake infantil y comuniones. Puedes ver algunos ejemplares en el apartado de <a href=portfolio.html>"Portfolio"</a> </p>
+                </div>
+                
+                <div class="carousel-container">
+                    <button class="carousel-button left" onclick="moveLeft()">&#10094;</button>
+                    <div class="carousel">
+                        <img src="assets/images/Portfolio/Boda en Zafra-151.jpg" alt="Imagen 1" class="carousel-image">
+                        <img src="assets/images/Portfolio/Boda en Zafra-57.jpg" alt="Imagen 2" class="carousel-image">
+                        <img src="assets/images/Portfolio/hermanos.jpg" alt="Imagen 3" class="carousel-image">
+                        <img src="assets/images/Portfolio/niño-baño.jpg" alt="Imagen 4" class="carousel-image">
+                        <img src="assets/images/Portfolio/niños.jpg" alt="Imagen 5" class="carousel-image">
+                        <img src="assets/images/Portfolio/niño-perro.jpg" alt="Imagen 6" class="carousel-image">
+                    </div>
+                    <button class="carousel-button right" onclick="moveRight()">&#10095;</button>
+                 </div>
+            </div>
+
+        </div>
+
+        <div class="blog" id="Blog">
+
+            <div class="title">
+                <h1>Blog</h1><hr>
+            </div>
+            
+           <div class="blog-container">
+                <div class="text">
+                    <p>Una simple sonrisa, una palabra amable, un gesto de apoyo, pueden iluminar el día de alguien más. Una pequeña acción, como escribir una nota de agradecimiento o hacer una llamada para decir "te quiero", puede tener un impacto enorme en la vida de alguien más. Son las pequeñas cosas las que nos dan la fuerza para seguir adelante, incluso en los momentos más difíciles.</p>
+                </div>
+               
+               
+                <div class="container">   
+                               
+               
+                    <div class="item-container">
+                        <div class="item">
+                            <img src="assets/images/Blog/Boda.jpg" alt="">
+                        </div>
+                        <a href="Celebrar.html"><h3><strong>Celebrar</strong></h3></a>
+                    </div>
+                    <div class="item-container">
+                        <div class="item">
+                            <img src="assets/images/Blog/Bebe.jpg" alt="">
+                        </div>
+                        <a href="Bebes.html"><h3><strong>Bebés</strong></h3></a>
+                    </div>
+               
+                </div>
+           </div>
+               
+
+        </div>
+
+       <div class="test-container">
+            <div class="title">
+                <h1>Testimonios</h1><hr>
+            </div>
+            <div class="testimonios" id="Testimonios">
+                <div class="text">
+                    <p>"Gloria y su marido son maravillosos, nos han hecho sentir cómodos y hacen unas fotos inmejorables. No hemos podido acertar más con ellos. Los volvería a contratar una y mil veces más, además de que son supersimpáticos y locos. ¡Nos encantan!"</p>
+                           <h3><strong>M JOSÉ N.</strong></h3>
+                 </div>
+                <div class="text">
+                    <p>"Haber elegido a Gloria Montaño como equipo para ser nuestros fotógrafos es la mejor decisión que hemos tomado durante nuestro proceso de nuestra boda. Son los mejores sin duda alguna, y no es porque haya sido nuestra boda, pero son las fotos de novios y de boda más bonitas que he visto nunca. Son profesionales de los pies a la cabeza, son artistas porque ven un fotón donde hay un palo sin más, y son super buena gente. Sin duda, como repito, ¡la mejor opción!"</p>
+                           <h3><strong>ISABEL</strong></h3>
+                       </div>
+                    <div class="text">
+                           <p>"Unos fotógrafos profesionales, muy amables los dos. Tanto ellos como el precio muy bueno. Lo que más nos gustó es que te hacen sentir como si fuesen de la familia, en definitiva muy contentos por su servicio. Un 10."</p>
+                           <h3><strong>EDUARDO M.</strong></h3>
+                    </div>
+                </div>
+       </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="rrss">
+            <a href="https://www.facebook.com/gloriamontanofotografia/?locale=es_ES"><h2>Facebook</h2></a>
+            <a href="https://www.instagram.com/gloriamontanofotografia/?hl=en"><h2>Instagram</h2></a>
+        </div>
+        <div class="contactos">
+            <div class="telefono">
+                <h3>Teléfono</h3>
+                <p>689 159 059</p>
+            </div>
+            <div class="direccion">
+                <h3>Dirección</h3>
+                <p>Manuel Martinez de Tejada, 13, 06300 Zafra, Badajoz</p>
+            </div>
+            <div class="image">
+                <img src="assets/images/logotipo gloria-blanco.png" alt="" class="logo">
+            </div>
+        </div>
+       
+    </footer>
+
+
+    
+    <script src="assets/js/JavaScript.js"></script>
+</body>
+</html>

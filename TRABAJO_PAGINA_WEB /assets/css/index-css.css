@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+:root {
+    --cl-Black: hsl(0, 0%, 0%);
+    --cl-White: rgb(255, 255, 255);
+    --cl-ligth-blue: hsl(180, 80%, 52%);
+    --cl-Darkness-blue: hsl(187, 55%, 45%);
+    --cl-Beige: hsla(48, 50%, 46%, 0.648);
+
+    --font-family1: Playfair+Display, system-ui, sans-serif;
+    --font-family2: Dancing+Script, system-ui, sans-serif;
+    --font-family3: Poetsen, system-ui,sans-serif;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+
+    .image {
+        & img{
+            max-width: 100%;
+        }   
+    
+    }
+
+    .sobre-nosotros {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2rem;
+
+        .title {
+            font-family: var(--font-family1);
+            font-size: 1em;
+            background-color: var(--cl-Beige);
+            text-align: center;
+            padding: 1rem;
+            border-radius: 50%;
+            & u {
+                color: var(--cl-White);
+                text-decoration: none;
+                
+            }
+        }
+
+        .autor {
+            margin-top: 1rem;
+            color: gray;
+        }
+
+        .text {
+            
+
+            & p {
+                text-align: center;
+                padding: 0.5rem;
+            }
+        }
+    }
+
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .portfolio-container {
+            display: flex;
+            flex-direction: row;
+
+            .text {
+                padding: 0.5rem;
+                margin: 1rem;
+                align-content: center;
+                background-image:linear-gradient(
+                     to right, 
+                     rgba(110, 110, 108, 0.322), rgba(59, 61, 61, 0.062)
+                ) ,url("fondo1.avif");
+
+                & p {
+                    text-align: center;
+                    font-family: var(--font-family3);
+                }
+
+                & p > a:hover {
+                    color: var(--cl-Darkness-blue);
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .title {
+            padding: 0.5rem;
+        }
+
+        
+
+        .carousel-container {
+            position: relative;
+            width: 250%;
+            max-width: 100%;
+            overflow: hidden;
+            margin: 1.5rem;
+            
+    
+            .carousel {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+                
+        
+                .carousel-image {
+                    max-width: 100%;
+                    transition: opacity 0.5s ease-in-out;
+                    display: block;
+                    
+                    
+                    
+                }
+            }
+        
+            .carousel-button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                z-index: 1;
+            }
+            .carousel-button.left {
+                left: 10px;
+                background-color: white;
+                color: black;
+            }
+            
+            .carousel-button.right {
+                right: 10px;
+                background-color: white;
+                color: black;
+            }
+            
+            .carousel-button:focus {
+                outline: none;
+            }
+            
+        }
+
+        
+    }
+}
+
+
+.blog {
+
+    .blog-container {
+        .text {
+            padding: 0.5rem;
+            margin: 1rem;
+            align-content: center;
+           
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem;
+
+            & h3 {
+                color: var(--cl-Beige);
+            }
+        }
+    }
+
+    .item-container {
+
+        .title {
+            padding: 0.5rem;
+        }
+
+        & img{
+            width: 100%;
+        }
+
+    }
+}
+
+.testimonios {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+
+    .text {
+        background-image: linear-gradient(to right, 
+        rgba(110, 110, 108, 0.322), rgba(59, 61, 61, 0.062));
+        padding: 1rem;
+    }
+
+    & p {
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    & h3 {
+        margin: 0.5rem;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 13px;
+    }
+    
+}
+
+@media screen and (max-width: 750px){
+    .testimonios {
+        flex-direction: column;
+    }
+}
+
